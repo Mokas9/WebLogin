@@ -1,179 +1,36 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/styleMain.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Авторизация YAPS</title>
 </head>
 <body>
-   <div class="conteiner">
-    <div class="main">
-        <div class="yaps">
+    <div class="bg"></div>
+    <div class="words">
+        <div class="YAPS" align="center">
             YAPS
         </div>
-        <div class="nad">
-            Надежная социальная площадка 
-            вашей компании
-        </div>
-        <div class="auto">
-            <a href="login.html" class="a1">Авторизоваться</a>
+        <div class="corp" align="center">
+            социальная сеть
         </div>
     </div>
-    <div class="priemu">
-        <div class="our">
-            Приемущетва нашей сети
-        </div>
-        <div class="blocks">
-            <div class="b1">
-              <div class="icon1">
-                  <img src="connection.png">
-              </div>
-              <div class="head1">
-                  Корпоративная социальная сеть
-              </div>
-              <div class="cont1">
-                 Делитесь знаниями, находите экспертов, получайте обратную связь, объединяйте сотрудников и укрепляйте HR-бренд компании 
-              </div>
-            </div>
-            <div class="b2">
-                <div class="icon2">
-                    <img src="social.png">
-                </div>
-                <div class="head2">
-                   Корпоративная площадка 
-                </div>
-                <div class="cont2">
-                    Официальная информация компании и оргструктура, совместная работа с документами, самообслуживание по заявкам и личный кабинет
-                </div>
-            </div>
-            <div class="b3">
-                <div class="icon3">
-                    <img src="people.png">
-                </div>
-                <div class="head3">
-                   Краудсорсинговая площадка 
-                </div>
-                <div class="cont3">
-                    Генерируйте идеи, делитесь ими, используя публикации, и отбирайте лучшие, используя коллективный разум ваших сотрудников через чаты
-                </div>
-            </div>
-        </div>
+    <div class="form" align="center">
+    <span class="autorize">Авторизация пользователя</span><br><br>
+    <form name="login" action="main.jsp" method="POST">
+        <span class="lo1">Логин</span> <input type="text" class="1" name="username"><br><br>
+        <span class="lo2">Пароль</span> <input type="password" class="2" name="password"><br><br>
+        <input type="submit" class="b1" value="Войти" >
+    </form>
     </div>
-    <div class="reg">
-        <div class="reg_head">
-            Зарегистрируйте свою компанию в нашей сети, и ваши сотрудники получат возожность пользоваться нашими услугами.
-        </div>
-        <div class="reg_but">
-           <a>Зарегистрировать</a>
-        </div>
-    </div>
-    <div class="stat">
-        <div class="stat_head">
-            По статистике
-        </div>
-        <div class="stat_cont">
-            <div class="stat1">
-                <div class="stat_num1">
-                    87%
-                </div>
-                <div class="stat_let1">
-                    Сотрудников в мире<br> не вовлечены в свою<br> работу.<br> В результате чего<br> прибыльность<br> компаний<br> значительно падает.
-                </div>
-            </div>
-            <div class="stat2">
-                <div class="stat_num2">
-                    64%
-                </div>
-                <div class="stat_let2">
-                    Успешных<br> нововведений<br> в компаниях внедрены,<br> благодаря развитым<br> внутренним<br> коммуникациям и<br> вовлечению.
-                </div>
-            </div>
-            <div class="stat3">
-                <div class="stat_num3">
-                    25%
-                </div>
-                <div class="stat_let3">
-                   Повышения<br> продуктивности<br> взаимодействующих<br> сотрудников<br> гарантируют<br> корпоративные<br> соцсети. 
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="svyaz">
-        <div class="svyaz_naz">
-            Оставайтесь на связи с коллегами в любом месте
-        </div>
-        <div class="svyaz_poy">
-            YAPS работает через браузеры:
-        </div>
-        <div class="brows">
-        <div class="chr">
-            <div class="chrome">
-                Chrome
-            </div>
-            <div class="chrome_list">
-                <ul>
-                    <li>PC,</li>
-                    <li>Mac,</li>
-                    <li>iPhone/iPad,</li>
-                    <li>Android.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="fir">
-            <div class="firefox">
-                Firefox
-            </div>
-            <div class="firefox_list">
-                <ul>
-                    <li>PC,</li>
-                    <li>Mac,</li>
-                    <li>Android.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="saf">
-            <div class="safar">
-                Safari
-            </div>
-            <div class="safari_list">
-                <ul>
-                    <li>Mac,</li>
-                    <li>iPhone/iPad.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="int">
-            <div class="internet">
-                Internet Explorer
-            </div>
-            <div class="internet_list">
-                <ul>
-                    <li>PC,</li>
-                    <li>Surface.</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="feedback">
-       <div class="feedback_naz">
-          Есть предложения по улучшению? 
-       </div>
-       <div class="feedback1">
-           Свяжитесь с нами
-       </div>
-       <div class="form">
-        <form>
-            <input type="text" placeholder="Имя"><br>
-            <input type="email" placeholder="Email"><br>
-            <input type="text" placeholder="Тема"><br>
-            <textarea placeholder="Сообщение"></textarea>
-            <input type="submit" value="Отправить">
-        </form>
-        </div>
-    </div>
-    <div class="podval"></div>
-    <div class="dawn">© 2017 YAPS</div>
+    <div class="dawn">
+        © 2017 YAPS
     </div>
 </body>
 </html>

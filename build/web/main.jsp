@@ -4,6 +4,9 @@
     Author     : maksi
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="beans.Author"%>
+<%@page import="beans.AuthorList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,6 +25,13 @@
             <h3>
                 ${param["password"]}
             </h3>
+            <h3>Список Авторов</h3>
+            <ul>
+                <jsp:useBean id="authorList" class="beans.AuthorList" scope="application"/>
+                <c:forEach var="author" items="${authorList.getAuthorList()}">
+                    <li><a href="#">${author.name()}</a></li>
+                </c:forEach>
+            </ul>
         </div>
     </body>
 </html>
